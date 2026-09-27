@@ -201,7 +201,7 @@ class _myWeatherPageState extends State<myWeatherPage>
       }
     } catch (e) {
       setState(() => isLoadingCurrent = false);
-      myDialog(context, "Location পেতে সমস্যা হয়েছে: $e");
+      myDialog(context, "There is Something Probleb to Find Your Location: $e");
     }
   }
 
@@ -573,7 +573,7 @@ Future<dynamic> myDialog(BuildContext context, String msg) {
           Center(
             child: TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text("ঠিক আছে",
+              child: Text("ok",
                   style: TextStyle(fontWeight: FontWeight.bold)),
             ),
           ),
