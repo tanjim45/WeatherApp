@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class InfoTile extends StatelessWidget {
   final String emoji;
   final String label;
-  final String value;
+  final value;
 
   const InfoTile({
     super.key,
     required this.emoji,
     required this.label,
-    required this.value,
+     this.value,
   });
 
   @override
