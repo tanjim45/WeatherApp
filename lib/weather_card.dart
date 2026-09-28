@@ -29,6 +29,7 @@ class WeatherCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+         
           // City + Emoji + Temp
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

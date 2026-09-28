@@ -27,6 +27,7 @@ class WeatherModel {
 
   factory WeatherModel.fromJson(Map<String, dynamic> json) {
     return WeatherModel(
+      
       city: "${json['name']}, ${json['sys']['country']}",
       condition: json['weather'][0]['main'],
       temperature: (json['main']['temp'] as num).toDouble(),
