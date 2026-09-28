@@ -1,6 +1,6 @@
 import 'package:wather_app/weather_helper.dart';
 
-import '../utils/weather_helper.dart';
+
 
 class WeatherModel {
   final String city;

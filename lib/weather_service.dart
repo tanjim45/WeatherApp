@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/weather_model.dart';
+import 'package:wather_app/weather_model.dart';
+
 
 class WeatherException implements Exception {
   final String message;
@@ -11,10 +12,9 @@ class WeatherException implements Exception {
 }
 
 class WeatherService {
-  // TODO: move this to an env variable / --dart-define instead of hardcoding
+ 
   static const String _apiKey = "ae2352b63c362802f1c515003d24fa81";
-  static const String _baseUrl =
-      "https://api.openweathermap.org/data/2.5/weather";
+  static const String _baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 
   Future<WeatherModel> fetchByCity(String city) async {
     final url = Uri.parse("$_baseUrl?q=$city&appid=$_apiKey&units=metric");

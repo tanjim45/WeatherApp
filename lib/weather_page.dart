@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:wather_app/error_card.dart';
+import 'package:wather_app/loading_card.dart';
+import 'package:wather_app/location_service.dart';
+import 'package:wather_app/my_dialog.dart';
+import 'package:wather_app/weather_card.dart';
+import 'package:wather_app/weather_helper.dart';
+import 'package:wather_app/weather_model.dart';
+import 'package:wather_app/weather_service.dart';
 
-import '../models/weather_model.dart';
-import '../services/weather_service.dart';
-import '../services/location_service.dart';
-import '../utils/weather_helper.dart';
-import '../widgets/common/my_dialog.dart';
-import '../widgets/weather_card.dart';
-import '../widgets/loading_card.dart';
-import '../widgets/error_card.dart';
+
 
 class MyWeatherPage extends StatefulWidget {
   const MyWeatherPage({super.key});
