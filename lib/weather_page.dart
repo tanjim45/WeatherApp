@@ -211,7 +211,7 @@ class _MyWeatherPageState extends State<MyWeatherPage> {
                   ] else if (!isLoadingSearch) ...[
                     const Center(
                       child: Text(
-                        "Upore sohorer nam likhe search koro",
+                        "Write the Contry OR Town name to See the weather",
                         style: TextStyle(
                             color: Colors.white60, fontStyle: FontStyle.italic),
                       ),
@@ -219,6 +219,14 @@ class _MyWeatherPageState extends State<MyWeatherPage> {
                   ],
 
                   const SizedBox(height: 30),
+                                          const Text(
+                          '© 2026 MD TANJIM MAHATAB BHUIYAN',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                 ],
               ),
             ),
