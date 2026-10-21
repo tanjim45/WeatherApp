@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:wather_app/weather_page.dart';
+import 'package:wather_app/welcome_page.dart';
+
 
 void main() {
-  runApp(weatherApp());
+  runApp(const WeatherApp());
 }
 
-class weatherApp extends StatelessWidget {
-  const weatherApp({super.key});
+class WeatherApp extends StatelessWidget {
+  const WeatherApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyWeatherPage(),
+      home: WelcomePage(
+        nextPage: MyWeatherPage(),
+      ),
     );
   }
 }
